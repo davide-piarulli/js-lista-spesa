@@ -11,14 +11,14 @@ const listaSpesa = [
   'verdura',
   'carne',
   'pasta',
-  'formaggio'
+  'formaggio',
+  'sughi'
 ];
 
 let i = 0;
 
 while (i < listaSpesa.length) {
-  console.log(listaSpesa[i]);
-  document.querySelector('.output').innerHTML += `
-  <div>- ${listaSpesa[i]}</div>`;
+  document.querySelector('.output').innerHTML += 
+  `<li>${listaSpesa[i]}</li>`;
   i++;
 }
